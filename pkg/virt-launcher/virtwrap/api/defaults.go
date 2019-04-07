@@ -24,9 +24,8 @@ func SetDefaults_OSType(ostype *OSType) {
 
 	// q35 is an alias of the newest q35 machine type.
 	// TODO: we probably want to select concrete type in the future for "future-backwards" compatibility.
-	ostype.Machine = "pseries-3.1"
 	if ostype.Machine == "" {
-		ostype.Machine = "pseries-3.1"
+		ostype.Machine = "pseries-2.11"
 	}
 }
 
